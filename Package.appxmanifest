@@ -4,12 +4,14 @@
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  IgnorableNamespaces="uap mp">
+  xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build"
+  IgnorableNamespaces="uap mp build">
 
   <Identity
     Name="spah-cmd"
     Publisher="CN=Savi, O=Savi, L=Hamburg, S=Hamburgs, C=Germany"
-    Version="1.0.5.1" />
+    Version="1.0.5.1"
+	ProcessorArchitecture="x64"/>
 
   <mp:PhoneIdentity PhoneProductId="79a8c078-6632-4818-a15e-17efdcc257f7" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
@@ -20,11 +22,15 @@
   </Properties>
 
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0" />
+	<PackageDependency Name="Microsoft.VCLibs.140.00.Debug" MinVersion="14.0.30704.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
+    <PackageDependency Name="Microsoft.NET.CoreRuntime.2.2" MinVersion="2.2.31331.1" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
+    <PackageDependency Name="Microsoft.NET.CoreFramework.Debug.2.2" MinVersion="2.2.31327.1" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
   </Dependencies>
 
   <Resources>
-    <Resource Language="en-US"/>
+    <Resource Language="EN-US"/>
+	<Resource uap:Scale="200"/>
   </Resources>
 
   <Applications>
@@ -47,4 +53,17 @@
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
+  
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0"/>
+    <build:Item Name="VisualStudio" Version="17.0"/>
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2022"/>
+    <build:Item Name="OperatingSystem" Version="10.0.22621.1 (WinBuild.160101.0800)"/>
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="17.6.36415.52745"/>
+    <build:Item Name="ProjectGUID" Value="{070A54CE-8F35-4AA5-833F-79EED7464AAD}"/>
+    <build:Item Name="OptimizingToolset" Value="None"/>
+    <build:Item Name="TargetRuntime" Value="Managed"/>
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="0.0.0.0"/>
+    <build:Item Name="MakePri.exe" Version="10.0.22621.1778 (WinBuild.160101.0800)"/>
+  </build:Metadata>
 </Package>

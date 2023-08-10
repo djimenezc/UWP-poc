@@ -13,3 +13,6 @@
 "bin\x64\Debug\SecurePrintAtHomeWin11.exe"            "SecurePrintAtHomeWin11.exe"
 "resources.pri"                             		  "resources.pri"
 "bin\x64\Debug\System.Runtime.dll" 		"System.Runtime.dll"
+"properties\Default.rd.xml"						"Properties\Default.rd.xml"
+"bin\x64\Debug\SecurePrintAtHomeWin11.xr.xml"          "SecurePrintAtHomeWin11.xr.xml"
+"bin\x64\Debug\SecurePrintAtHomeWin11.exe"		"entrypoint\SecurePrintAtHomeWin11.exe"

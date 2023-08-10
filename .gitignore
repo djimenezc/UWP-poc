@@ -6,3 +6,4 @@
 *.pri
 *.crt
 priconfig.xml
+output-msix
