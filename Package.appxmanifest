@@ -9,7 +9,7 @@
   <Identity
     Name="spah-cmd"
     Publisher="CN=Savi, O=Savi, L=Hamburg, S=Hamburgs, C=Germany"
-    Version="1.0.4.1" />
+    Version="1.0.5.1" />
 
   <mp:PhoneIdentity PhoneProductId="79a8c078-6632-4818-a15e-17efdcc257f7" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
