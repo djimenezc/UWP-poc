@@ -1,0 +1,8 @@
+/bin
+/BundleArtifacts
+/AppPackages
+/obj
+*.appx
+*.pri
+*.crt
+priconfig.xml
